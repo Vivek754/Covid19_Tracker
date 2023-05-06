@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <i class="fa fa-sun-o" aria-hidden="true" id="darkMode"></i>
+    <form>
+        <input list="state" name="browser" autocomplete="off" id="stateInput" placeholder="States">
+        <datalist id="state">
+        </datalist>
+        <input list="cities" name="cities" autocomplete="off" id="city" placeholder="City">
+        <datalist id="cities">
+        </datalist>
+        <input type="button" id="cityBtn" value="Get Result">
+    </form><br><br>
+    <table id="table">
+        <tr>
+            <th>State</th>
+            <th>City</th>
+            <th>Confirmed</th>
+            <th>Recovered</th>
+            <th>Deceased</th>
+            <th>Vaccinated</th>
+        </tr>
+        <tr>
+            <td id="currentState"></td>
+            <td id="currentCity"></td>
+            <td id="result1"></td>
+            <td id="result2"></td>
+            <td id="result3"></td>
+            <td id="result4"></td>
+        </tr>
+    </table>
+
+</body>
+<script src="main.js"></script>
+
+</html>
